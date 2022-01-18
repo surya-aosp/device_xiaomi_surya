@@ -151,6 +151,7 @@ persist.vendor.dpmhalservice.enable=1
 
 # Display
 debug.hwui.skia_atrace_enabled=false
+debug.sf.frame_rate_multiple_threshold=120
 debug.sf.auto_latch_unsignaled=0
 debug.sf.enable_gl_backpressure=0
 debug.sf.enable_transaction_tracing=false
