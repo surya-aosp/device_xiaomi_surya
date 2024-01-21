@@ -228,6 +228,10 @@ persist.sys.sf.color_mode=9
 # GFX
 ro.config.avoid_gfx_accel=true
 
+# Fingerprint
+ro.vendor.fingerprint.type=side
+ro.vendor.fingerprint.sensor_location=1080|920|220|local:4630946772315683201
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
