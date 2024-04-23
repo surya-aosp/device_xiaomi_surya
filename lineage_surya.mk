@@ -16,12 +16,34 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# crDroid build flag
-TARGET_ENABLE_BLUR := true
-TARGET_EXCLUDES_AUDIOFX := true
-
 # Sony Dolby
 TARGET_SHIPS_SOUND_ENHANCEMENT := true
+
+# Project Matrixx
+MATRIXX_BUILD_TYPE := Official
+MATRIXX_MAINTAINER := shoya0x00
+
+# Project Matrixx Extra
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_EXCLUDES_AUDIOFX := true
+
+# GMS
+WITH_GMS ?= true
+ifeq ($(WITH_GMS),true)
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_STOCK_AICORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_WALLEFFECT := true
+TARGET_CALL_RECORDING_SUPPORTED := true
+WITH_GMS_COMMS_SUITE := true
+endif
+
+# Disable Matlog
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+TARGET_DISABLE_MATLOG := true
+endif
 
 PRODUCT_NAME := lineage_surya
 PRODUCT_DEVICE := surya
