@@ -322,7 +322,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-statix
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
@@ -415,7 +415,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/qcom-caf/common/libqti-perfd-client \
-    hardware/xiaomi
+    vendor/hardware/xiaomi
 
 # Variant Properties
 PRODUCT_COPY_FILES += \

@@ -4,7 +4,7 @@ soong_namespace {
         "hardware/google/interfaces",
         "hardware/google/pixel",
         "hardware/qcom-caf/common/libqti-perfd-client",
-        "hardware/xiaomi",
+        "vendor/hardware/xiaomi",
     ],
 }
 
