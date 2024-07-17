@@ -23,6 +23,11 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Platform
+TARGET_BOARD_PLATFORM := sm6150
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := sm6150
+
 # Kernel
 TARGET_KERNEL_VERSION := 4.14
 TARGET_KERNEL_DIR ?= device/xiaomi/surya-kernel
