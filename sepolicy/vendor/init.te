@@ -1,2 +1,3 @@
 allow init per_boot_file:file ioctl;
+allow init sysfs_hbm:file { open write };
 allowxperm init per_boot_file:file ioctl { F2FS_IOC_SET_PIN_FILE };
