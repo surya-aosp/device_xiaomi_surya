@@ -411,6 +411,14 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/common/libqti-perfd-client \
     hardware/xiaomi
 
+# Variant Properties
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,odm.*.prop,$(LOCAL_PATH)/properties/,$(TARGET_COPY_OUT_ODM)) \
+    $(call find-copy-subdir-files,product.*.prop,$(LOCAL_PATH)/properties/,$(TARGET_COPY_OUT_PRODUCT)) \
+    $(call find-copy-subdir-files,system.*.prop,$(LOCAL_PATH)/properties/,$(TARGET_COPY_OUT_SYSTEM)) \
+    $(call find-copy-subdir-files,system_ext.*.prop,$(LOCAL_PATH)/properties/,$(TARGET_COPY_OUT_SYSTEM_EXT)) \
+    $(call find-copy-subdir-files,vendor.*.prop,$(LOCAL_PATH)/properties/,$(TARGET_COPY_OUT_VENDOR))
+
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true

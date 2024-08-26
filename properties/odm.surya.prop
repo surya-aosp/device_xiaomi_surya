@@ -1,0 +1,15 @@
+# surya variant specific props
+ro.product.oem.device=surya
+ro.product.oem.brand=POCO
+ro.product.oem.marketname=POCO X3 NFC
+ro.product.oem.model=POCO X3 NFC
+ro.product.oem.name=surya_eea
+ro.oem.build.fingerprint=POCO/surya_eea/surya:12/RKQ1.211019.001/V14.0.5.0.SJGEUXM:user/release-keys
+ro.oem.build.description=surya_eea-user 12 RKQ1.211019.001 V14.0.5.0.SJGEUXM release-keys
+ro.product.odm.device=surya
+ro.product.odm.brand=POCO
+ro.product.odm.marketname=POCO X3 NFC
+ro.product.odm.model=POCO X3 NFC
+ro.product.odm.name=surya_eea
+ro.odm.build.fingerprint=POCO/surya_eea/surya:12/RKQ1.211019.001/V14.0.5.0.SJGEUXM:user/release-keys
+ro.odm.build.description=surya_eea-user 12 RKQ1.211019.001 V14.0.5.0.SJGEUXM release-keys

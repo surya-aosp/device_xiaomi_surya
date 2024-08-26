@@ -268,3 +268,6 @@ ro.zram.periodic_wb_delay_hours=24
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Variant specific props
+import /vendor/vendor.${ro.boot.hwname}.prop

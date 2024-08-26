@@ -1,0 +1,22 @@
+# karna variant specific props
+bluetooth.device.default_name=POCO X3
+vendor.usb.product_string=POCO X3
+ro.build.product=karna
+ro.build.fingerprint=POCO/karna_in/karna:12/RKQ1.211019.001/V13.0.2.0.SJGINXM:user/release-keys
+ro.product.brand=POCO
+ro.product.board=karna
+ro.product.marketname=POCO X3
+ro.product.device=karna
+ro.product.model=POCO X3
+ro.product.name=karna_in
+ro.product.vendor.brand=POCO
+ro.product.vendor.device=karna
+ro.product.vendor.model=POCO X3
+ro.product.vendor.name=karna_in
+ro.product.bootimage.device=karna
+ro.product.bootimage.name=karna_in
+ro.product.bootimage.brand=POCO
+ro.product.bootimage.marketname=POCO X3
+ro.product.bootimage.model=POCO X3
+ro.vendor.build.fingerprint=POCO/karna_in/karna:12/RKQ1.211019.001/V13.0.2.0.SJGINXM:user/release-keys
+ro.vendor.build.description=karna_in-user 12 RKQ1.211019.001 V13.0.2.0.SJGINXM release-keys

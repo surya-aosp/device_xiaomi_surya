@@ -1,0 +1,22 @@
+# surya variant specific props
+bluetooth.device.default_name=POCO X3 NFC
+vendor.usb.product_string=POCO X3 NFC
+ro.build.product=surya
+ro.build.fingerprint=POCO/surya_eea/surya:12/RKQ1.211019.001/V14.0.5.0.SJGEUXM:user/release-keys
+ro.product.brand=POCO
+ro.product.board=surya
+ro.product.marketname=POCO X3 NFC
+ro.product.device=surya
+ro.product.model=POCO X3 NFC
+ro.product.name=surya_eea
+ro.product.vendor.brand=POCO
+ro.product.vendor.device=surya
+ro.product.vendor.model=POCO X3 NFC
+ro.product.vendor.name=surya_eea
+ro.product.bootimage.device=surya
+ro.product.bootimage.name=surya_eea
+ro.product.bootimage.brand=POCO
+ro.product.bootimage.marketname=POCO X3 NFC
+ro.product.bootimage.model=POCO X3 NFC FC
+ro.vendor.build.fingerprint=POCO/surya_eea/surya:12/RKQ1.211019.001/V14.0.5.0.SJGEUXM:user/release-keys
+ro.vendor.build.description=surya_eea-user 12 RKQ1.211019.001 V14.0.5.0.SJGEUXM release-keys

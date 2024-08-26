@@ -1,0 +1,8 @@
+# karna variant specific props
+ro.product.product.device=karna
+ro.product.product.brand=POCO
+ro.product.product.marketname=POCO X3
+ro.product.product.model=POCO X3
+ro.product.product.name=karna_in
+ro.product.build.fingerprint=POCO/karna_in/karna:12/RKQ1.211019.001/V13.0.2.0.SJGINXM:user/release-keys
+ro.product.build.description=karna_in-user 12 RKQ1.211019.001 V13.0.2.0.SJGINXM release-keys

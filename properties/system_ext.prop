@@ -1,0 +1,2 @@
+# Variant specific props
+import /system_ext/system_ext.${ro.boot.hwname}.prop
