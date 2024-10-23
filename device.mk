@@ -26,6 +26,11 @@ PRODUCT_COPY_FILES += \
 # XiaomiParts
 $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 
+# Extra
+$(call inherit-product-if-exists, vendor/gcgop/config.mk)
+$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
@@ -323,7 +328,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-hentai
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
