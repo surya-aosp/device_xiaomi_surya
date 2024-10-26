@@ -23,6 +23,12 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Kernel
+TARGET_KERNEL_VERSION := 4.14
+TARGET_KERNEL_DIR ?= device/xiaomi/surya-kernel
+PRODUCT_COPY_FILES += \
+    $(TARGET_KERNEL_DIR)/Image:kernel
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \

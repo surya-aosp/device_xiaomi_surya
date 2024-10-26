@@ -10,6 +10,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/surya
+KERNEL_PATH := device/xiaomi/surya-kernel
 
 # Inherit from proprietary files
 include vendor/xiaomi/surya/BoardConfigVendor.mk
@@ -71,17 +72,19 @@ ODM_MANIFEST_SURYA_FILES := $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_IMAGE_NAME := Image.gz
+BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_RAMDISK_USE_LZ4 := true
 
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
-TARGET_KERNEL_CONFIG := surya_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
+BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)
+BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
+TARGET_PREBUILT_KERNEL := $(KERNEL_PATH)/$(BOARD_KERNEL_IMAGE_NAME)
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
