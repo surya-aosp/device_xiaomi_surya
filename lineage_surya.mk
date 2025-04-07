@@ -20,6 +20,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_ENABLE_BLUR := true
 TARGET_EXCLUDES_AUDIOFX := true
 
+# Sony Dolby
+TARGET_SHIPS_SOUND_ENHANCEMENT := true
+
 PRODUCT_NAME := lineage_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
