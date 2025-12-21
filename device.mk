@@ -22,6 +22,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # GcamGo
 $(call inherit-product, vendor/gcgop/config.mk)
 
+# Priv Keys
+$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
